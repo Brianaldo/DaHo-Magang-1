@@ -30,7 +30,7 @@ int main(){
     t4 = t1->minus(t2);
     t4.printTime();
     // ------ AdditionalFunctions ----- //
-    cout << t4.convertToSecond() << " seconds";
+    cout << t4.convertToSecond() << " seconds" << endl;
     // -------------------------- //
 
 }

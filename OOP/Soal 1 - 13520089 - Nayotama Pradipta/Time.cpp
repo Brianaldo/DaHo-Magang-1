@@ -16,7 +16,7 @@ Time::Time(const Time& other){
     this->s = other.s;
 }
 Time::~Time(){
-
+    cout << "Destructor called" << endl;
 }
 
 int Time::getHour(){
