@@ -1,3 +1,5 @@
+#ifndef BANGUN_HPP
+#define BANGUN_HPP
 #include <iostream>
 #include <string>
 #include <math.h>
@@ -20,3 +22,5 @@ int getAreaRectangle(int length, int width);
 int getPerimeterRectangle(int length, int width);
 
 void printSpecBangun(string bangun);
+
+#endif
