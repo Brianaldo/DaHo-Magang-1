@@ -3,8 +3,6 @@
 
 #include <iostream>
 
-using namespace std;
-
 class Vector2 {
 private:
   int* elements;
@@ -44,11 +42,11 @@ public:
 
   /* Overloading Operator << output */
   /* print vektor dalam bentuk <element1,element2> */
-  friend std::ostream& operator<<(ostream& os, Vector2 vector);
+  friend std::ostream& operator<<(std::ostream& os, Vector2 vector);
 
   /* Overloading Operator >> input */
   /* input vektor yang menerima 2 element */
-  friend std::istream& operator>>(istream& is, Vector2& vector);
+  friend std::istream& operator>>(std::istream& is, Vector2& vector);
 };
 
 #endif
