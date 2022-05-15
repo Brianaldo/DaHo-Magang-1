@@ -1,9 +1,8 @@
 #ifndef TIME_HPP
 #define TIME_HPP
 
-/*
-    Lengkapi File Header di bawah ini. Buat Juga sebuah file main.cpp untuk melakukan pengujian ke tiap method dibawah.
-*/ 
+#include <iostream>
+#include <iomanip>
 
 class Time {
     private:
@@ -41,4 +40,3 @@ class Time {
 };
 
 #endif
-   
