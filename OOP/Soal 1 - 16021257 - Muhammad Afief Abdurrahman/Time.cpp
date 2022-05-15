@@ -22,6 +22,8 @@ Time::Time(const Time& time){
     this->s = time.s;
 }
 
+Time::~Time(){ }
+
 //Methods
 int Time::getHour(){
     return this->h;
@@ -81,7 +83,7 @@ Time Time::minus(Time t){
 
     int temp_h, temp_m, temp_s, subtractedTime;
 
-    subtractedTime = t.convertToSecond() - this->convertToSecond();
+    subtractedTime = this->convertToSecond() - t.convertToSecond();
     temp_h = subtractedTime/3600;
     temp_m = (subtractedTime - (temp_h*3600))/60;
     temp_s = (subtractedTime - (temp_h*3600 + temp_m*60));
@@ -90,5 +92,9 @@ Time Time::minus(Time t){
 }
 
 void Time::printTime(){
-    std::cout << std::setw(2) << std::setfill('0') << this->h << ":" << this->m << ":" << this->s << std::endl;
+    std::cout
+    << std::setfill('0') << std::setw(2) << this->h << ":" 
+    << std::setfill('0') << std::setw(2) << this->m << ":" 
+    << std::setfill('0') << std::setw(2) << this->s 
+    << std::endl;
 }
