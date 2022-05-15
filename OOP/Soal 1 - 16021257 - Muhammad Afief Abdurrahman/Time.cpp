@@ -75,13 +75,13 @@ Time Time::add(Time t){
 }
 
 Time Time::minus(Time t){
-    if (Time::convertToSecond() < t.convertToSecond()){
+    if (this->convertToSecond() < t.convertToSecond()){
         return Time(this->h, this->m, this->s);
     }
 
     int temp_h, temp_m, temp_s, subtractedTime;
 
-    subtractedTime = t.convertToSecond() - Time::convertToSecond();
+    subtractedTime = t.convertToSecond() - this->convertToSecond();
     temp_h = subtractedTime/3600;
     temp_m = (subtractedTime - (temp_h*3600))/60;
     temp_s = (subtractedTime - (temp_h*3600 + temp_m*60));
