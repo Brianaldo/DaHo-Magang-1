@@ -13,6 +13,8 @@ public:
   /* Default Constructor */
   /* Inisialisasi vektor <0, 0> */
   Vector2();
+  
+  
 
   /* Copy Constructor */
   Vector2(const Vector2& other);

@@ -6,6 +6,9 @@
 class WarungNasgor : public WarungNasi {
     private:
         int kecap;
+        int nasi;
+        int telur;
+        int uang;
     public:
         // Masukan: Jumlah uang, nasi, telur, dan kecap
         WarungNasgor(int uang, int nasi, int telur, int kecap);

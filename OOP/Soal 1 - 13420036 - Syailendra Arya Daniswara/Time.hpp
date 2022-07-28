@@ -1,6 +1,9 @@
 #ifndef TIME_HPP
 #define TIME_HPP
 
+#include <iostream>
+
+using namespace std;
 /*
     Lengkapi File Header di bawah ini. Buat Juga sebuah file main.cpp untuk melakukan pengujian ke tiap method dibawah.
 */ 
@@ -41,4 +44,3 @@ class Time {
 };
 
 #endif
-   
